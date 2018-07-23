@@ -45,9 +45,9 @@ function product(coordinates) {
 var max_product = 0
 
 for(i=0; i<20; i++) {
-  console.log('row: ' + i)
+  // console.log('row: ' + i)
   for(j=0; j<20; j++) {
-    console.log('col: ' + j)
+    // console.log('col: ' + j)
     multipications = productsOriginatingAt(i,j)
     for(k in multipications) {
       var result = product(multipications[k])

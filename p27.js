@@ -21,8 +21,8 @@ var max_a = 0
 var max_b = 0
 var x = 0
 
-for(var a=-1000; a<1001; a++) {
-    for(var b=2; b<1001; b++) {
+for(var a=-1000; a<42; a++) {
+    for(var b=2; b<42; b++) {
         if(isPrime(b)) {
             consective_prime_counter = 1
             x = 1
