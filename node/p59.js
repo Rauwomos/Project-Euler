@@ -5,8 +5,6 @@ function isTrue(value) {
     return value
 }
 
-console.time('cipher')
-
 file = fs.readFileSync('p59_cipher.txt', 'utf-8').split(',').map(x=>parseInt(x))
 var key = []
 var max = 0
@@ -40,12 +38,10 @@ for(var i=97; i<123; i++) {
     }
 }
 
-// var ascii = best.map(x => String.fromCharCode(x)).join('')
+var ascii = best.map(x => String.fromCharCode(x)).join('')
 
-// console.log(max)
-// console.log(key)
-// console.log('Key: ' + key.map(x => String.fromCharCode(x)).join(''))
-// console.log(ascii)
+console.log(max)
+console.log(key)
+console.log('Key: ' + key.map(x => String.fromCharCode(x)).join(''))
+console.log(ascii)
 console.log(best.reduce((a,b) => a+b,0))
-
-console.timeEnd('cipher')
